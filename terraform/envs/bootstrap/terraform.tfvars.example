@@ -1,0 +1,4 @@
+aws_region          = "eu-central-1"
+project_name        = "tinymonitor"
+tfstate_bucket_name = "tinymonitor-tfstate-prod"
+tf_lock_table_name  = "tinymonitor-terraform-locks"
