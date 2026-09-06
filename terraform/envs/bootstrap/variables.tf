@@ -4,6 +4,11 @@ variable "aws_region" {
   default     = "eu-central-1"
 }
 
+variable "aws_profile" {
+  type    = string
+  default = "tinymonitor-bootstrap"
+}
+
 variable "project_name" {
   description = "Project name used in resource names"
   type        = string
