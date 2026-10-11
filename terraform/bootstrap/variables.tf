@@ -15,13 +15,17 @@ variable "project_name" {
   default     = "tinymonitor"
 }
 
-variable "tfstate_bucket_name" {
-  description = "S3 bucket name for Terraform state"
+variable "environment" {
+  type    = string
+  default = "prod"
+}
+
+variable "github_owner" {
+  description = "GitHub repository owner"
   type        = string
 }
 
-variable "tf_lock_table_name" {
-  description = "DynamoDB table name for Terraform state locks"
+variable "github_repository" {
+  description = "GitHub repository containing Terraform infrastructure"
   type        = string
-  default     = "tinymonitor-terraform-locks"
 }
