@@ -5,5 +5,5 @@ locals {
 
   tfstate_bucket_name = "${var.project_name}-tfstate-${var.environment}-${local.aws_account_id}"
 
-  aws_artifacts_state_key = "aws-artifacts/prod/terraform.tfstate"
+  tfstate_prefix = "projects/"
 }

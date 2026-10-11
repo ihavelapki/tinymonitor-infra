@@ -1,6 +1,10 @@
 resource "aws_s3_bucket" "tfstate" {
   bucket = local.tfstate_bucket_name
 
+  lifecycle {
+    prevent_destroy = true
+  }
+
   tags = {
     Purpose = "terraform-state"
   }
