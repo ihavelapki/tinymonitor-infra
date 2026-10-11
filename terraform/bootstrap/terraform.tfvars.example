@@ -1,4 +1,5 @@
 aws_region          = "eu-central-1"
-project_name        = "tinymonitor"
-tfstate_bucket_name = "tinymonitor-tfstate-prod"
-tf_lock_table_name  = "tinymonitor-terraform-locks"
+aws_profile         = "your aws profile"
+project_name        = "project name"
+github_owner        = "github owner"
+github_repository   = "tinymonitor-infra"
